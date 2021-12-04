@@ -100,8 +100,8 @@ class CurrentChart(Chart):
 	def draw_chart(self):
 		for sign, obj in self.position.items():
 			chart_color = 'BLUE'
-			cprint('=' * 52, clr=chart_color)
-			cprint(f'{obj["house"]} in {sign}', clr=chart_color)
+			cprint('=' * 52, color=chart_color)
+			cprint(f'{obj["house"]} in {sign}', color=chart_color)
 			for ob in obj['objects']:
 				print(f'|\t{ob.id} at {angle.toString(ob.signlon)}', end=' ')
 
